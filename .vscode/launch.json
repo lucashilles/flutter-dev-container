@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.0.1",
+    "configurations": [
+        {
+            "name": "Flutter",
+            "type": "dart",
+            "request": "launch",
+            "program": "myapp/lib/main.dart",
+            // Setting for fixed web server port
+            //"args": [
+            //    "--web-port",
+            //    "8000"
+            //],
+        }
+    ]
+}
