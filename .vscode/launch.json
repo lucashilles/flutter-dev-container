@@ -5,15 +5,16 @@
     "version": "0.0.1",
     "configurations": [
         {
-            "name": "Flutter",
+            "name": "Flutter Web",
             "type": "dart",
             "request": "launch",
-            "program": "myapp/lib/main.dart",
+            "program": "test_project/lib/main.dart",
+            "deviceId": "web-server",
             // Setting for fixed web server port
-            //"args": [
-            //    "--web-port",
-            //    "8000"
-            //],
+            "args": [
+                "--web-port",
+                "43567"
+            ],
         }
     ]
 }
