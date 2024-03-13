@@ -81,12 +81,12 @@ RUN  sdkmanager "system-images;android-${ANDROID_PLATFORM_VERSION};google_apis;x
 
 # Install Flutter SDK
 RUN tar -xf flutter.tar.xz -C /opt/ \
-	&& rm flutter.tar.xz
+	&& rm flutter.tar.xz \
 	&& git config --global --add safe.directory /opt/flutter \
 	&& flutter config --android-sdk "${ANDROID_SDK_ROOT}" \
 	&& yes | flutter doctor --android-licenses \
 	&& flutter config --no-analytics \
-	&& flutter update-packages \
+	&& flutter update-packages
 
 # Clean up
 RUN rm flutter.tar.xz \
