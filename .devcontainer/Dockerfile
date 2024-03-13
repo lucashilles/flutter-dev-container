@@ -90,4 +90,4 @@ RUN tar -xf flutter.tar.xz -C /opt/ \
 
 # Clean up
 RUN rm flutter.tar.xz \
-	&& 	&& rm android-sdk-tools.zip
+	&& rm android-sdk-tools.zip
